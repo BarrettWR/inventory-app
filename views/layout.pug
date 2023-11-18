@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/dist/output.css')
+  body(class=" bg-orange-200 ")
+    nav
+      ul(class="flex justify-end w-[100%] gap-5 text-lg")
+        li(class="inline") 
+            a(href="/")  Home
+        li(class="inline") 
+          a(href="/eggs")  Eggs
+        li(class="inline") 
+          a(href="/young")  Young
+        li(class="inline") 
+          a(href="/adolescent")  Adolescents
+        li(class="inline") 
+          a(href="/adults")  Adults
+    block content
