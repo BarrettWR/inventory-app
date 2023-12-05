@@ -1,5 +1,10 @@
 extends layout
+include mixins
 
 block content
-  h1= title
-  p Welcome to #{title}
+    div(class="flex align-middle justify-center h-[70vh] w-[90%] m-12 mr-auto ml-auto text-white rounded-lg") 
+      img(src="/public/images/eggcave.jpg", alt="", class="object-center object-cover opacity-90 rounded-lg w-[90%] h-[70vh] absolute")
+      h1(class="text-[5rem] self-center align-middle text-center w-[100%] drop-shadow-[0_0px_5px_rgba(0,0,0,1)]") #{title}
+
+    h1(class="text-[3rem] flex flex-wrap justify-center mb-8") Eggs
+    +dragonCards(dragon, eggs)

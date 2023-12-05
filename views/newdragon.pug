@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div(class="flex align-middle justify-center h-[70vh] w-[90%] m-12 mr-auto ml-auto text-white rounded-lg") 
+    img(src="/public/images/adoption.jpg", alt="", class="object-center object-cover opacity-90 rounded-lg w-[90%] h-[70vh] absolute")
+    h1(class="text-[5rem] self-center align-middle text-center w-[100%] drop-shadow-[0_0px_5px_rgba(0,0,0,1)]") #{title}
+
+
+  div(class="flex justify-center")
+    div(class="flex flex-col flex-grow  items-center p-10 rounded-lg max-w-[50svw] bg-orange-500 bg-opacity-30")
+      h1(class="text-4xl mb-8")= title
+      form(action="/newdragon" method="POST")
+          div(class="flex flex-col gap-5")
+              input(class="flex-grow p-2 rounded-lg" type="text" name="name" id="name" placeholder="Name")
+              input(class="flex-grow p-2 rounded-lg" type="number" name="price" id="price" placeholder="Price")
+              input(class="flex-grow p-2 rounded-lg" type="text" name="description" id="description" placeholder="Description")
+              select(class="flex-grow p-2 rounded-lg" type="text" name="category" id="category")
+                <option value="Egg">Egg</option>
+                <option value="Young">Young</option>
+                <option value="Adolescent">Adolescent</option>
+                <option value="Adult">Adult</option>
+              input(class="flex-grow p-2 rounded-lg" type="text" name="url" id="url" placeholder="Image url")
+              input(class="flex-grow bg-orange-100 p-5 rounded-lg cursor-pointer" type="submit" value="Submit")
+

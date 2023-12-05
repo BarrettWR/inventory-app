@@ -1,0 +1,7 @@
+mixin dragonCards(dragon, category)
+    div(class="flex flex-wrap gap-10 justify-center")
+        for dragon in category
+            a(href= dragon.pageurl) 
+                div(class="flex flex-col items-center bg-yellow-700 bg-opacity-30 p-5 rounded-lg cursor-pointer shadow-lg duration-150 hover:scale-[103%]")
+                    img(src=dragon.url, alt="egg", class="md:max-w-[200px] lg:max-w-sm min-w-[200px] aspect-square object-cover mb-6 rounded-lg ")
+                    h2(class="text-4xl")= dragon.name

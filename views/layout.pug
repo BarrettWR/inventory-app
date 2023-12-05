@@ -3,17 +3,35 @@ html
   head
     title= title
     link(rel='stylesheet', href='/dist/output.css')
-  body(class=" bg-orange-200 ")
-    nav
-      ul(class="flex justify-end w-[100%] gap-5 text-lg")
-        li(class="inline") 
+  body(class="font-serif p-0 bg-yellow-50  min-h-screen overflow-x-hidden text-2xl")
+    nav(class="")
+      ul(class="flex justify-end w-[100%] pt-14 pr-20 gap-5 text-2xl mb-10")
+        li 
             a(href="/")  Home
-        li(class="inline") 
+        li 
           a(href="/eggs")  Eggs
-        li(class="inline") 
+        li 
           a(href="/young")  Young
-        li(class="inline") 
+        li 
           a(href="/adolescent")  Adolescents
-        li(class="inline") 
+        li 
           a(href="/adults")  Adults
+        li 
+          a(href="/newdragon") Add Dragon
     block content
+    
+    footer(class="bg-yellow-700 bg-opacity-30 p-10 mt-[200px] font-footer")
+      div(class="flex flex-wrap justify-around")
+        div(class="")
+          p Created with:
+          ul(class="pl-8")
+            li - Node
+            li - Express 
+            li - Mongoose 
+            li - Pug 
+            li - Tailwind
+        div(class="self-end")
+            p Made by 
+              a(href="https://github.com/BarrettWR" class="text-blue-800")
+                span Barrett Reinhard
+        

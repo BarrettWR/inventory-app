@@ -11,3 +11,7 @@ body {
 a {
   color: black;
 }
+
+.font-footer {
+  font-family: 'Roboto Mono', monospace;
+}
